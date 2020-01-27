@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Maple/v16
+/bin/Debug-x64
+/bin-int/Debug-x64
