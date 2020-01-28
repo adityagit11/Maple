@@ -9,3 +9,5 @@
 #else
 	#error MAPLE ONLY SUPPORTS WINDOWS
 #endif
+
+#define BIT(x) (1 << x)

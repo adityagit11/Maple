@@ -11,6 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Maple\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Maple\Events\Event.h" />
+    <ClInclude Include="src\Maple\Events\KeyEvent.h" />
+    <ClInclude Include="src\Maple\Events\MouseEvent.h" />
     <ClInclude Include="src\Maple\Log.h" />
     <ClInclude Include="src\Maple\Application.h" />
     <ClInclude Include="src\Maple\Core.h" />
