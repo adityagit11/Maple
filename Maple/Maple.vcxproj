@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Maple\Log.h" />
     <ClInclude Include="src\Maple\Application.h" />
     <ClInclude Include="src\Maple\Core.h" />
     <ClInclude Include="src\Maple\EntryPoint.h" />
     <ClInclude Include="src\Maple.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Maple\Log.cpp" />
     <ClCompile Include="src\Maple\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -68,6 +70,7 @@
       <PreprocessorDefinitions>MP_PLATFORM_WINDOWS;MP_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <BrowseInformation>true</BrowseInformation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Maple\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -85,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>MP_PLATFORM_WINDOWS;MP_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Maple\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
