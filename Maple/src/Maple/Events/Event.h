@@ -1,9 +1,5 @@
 #pragma once
 
-// These should be in precompiled header but let them be in here!
-#include <string>
-#include <functional>
-
 #include "../Core.h"
 
 namespace Maple {

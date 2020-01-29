@@ -42,12 +42,18 @@
     <ClInclude Include="src\Maple\Events\ApplicationEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Maple\mppch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Maple\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Maple\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Maple\mppch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

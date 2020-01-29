@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Maple\mppch.h" />
     <ClInclude Include="src\Maple\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Maple\Events\Event.h" />
     <ClInclude Include="src\Maple\Events\KeyEvent.h" />
@@ -22,6 +23,10 @@
     <ClInclude Include="src\Maple.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Maple\mppch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="src\Maple\Log.cpp" />
     <ClCompile Include="src\Maple\Application.cpp" />
   </ItemGroup>
@@ -74,7 +79,9 @@
       <PreprocessorDefinitions>MP_PLATFORM_WINDOWS;MP_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <BrowseInformation>true</BrowseInformation>
-      <AdditionalIncludeDirectories>$(SolutionDir)Maple\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;$(SolutionDir)Maple\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>mppch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -92,7 +99,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>MP_PLATFORM_WINDOWS;MP_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Maple\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;$(SolutionDir)Maple\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>mppch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

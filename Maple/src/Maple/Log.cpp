@@ -1,3 +1,5 @@
+#include "mppch.h"
+
 #include "Log.h"
 
 namespace Maple {
