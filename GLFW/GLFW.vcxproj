@@ -39,13 +39,13 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -71,6 +71,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -80,12 +82,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_GLFW_WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -127,7 +131,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_GLFW_WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -138,6 +142,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Maple\vendor\GLFW\include\GLFW\glfw3.h" />
+    <ClInclude Include="..\Maple\vendor\GLFW\include\GLFW\glfw3native.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Maple\vendor\GLFW\src\glfw_config.h.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Maple\vendor\GLFW\src\context.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\egl_context.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\init.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\input.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\monitor.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\osmesa_context.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\vulkan.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\wgl_context.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\win32_init.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\win32_joystick.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\win32_monitor.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\win32_thread.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\win32_time.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\win32_window.c" />
+    <ClCompile Include="..\Maple\vendor\GLFW\src\window.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

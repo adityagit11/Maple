@@ -1,140 +1,17 @@
-﻿
-Project Performance Summary:
-      325 ms  C:\Users\adising\source\repos\Maple\GLFW\GLFW.vcxproj   1 calls
-                325 ms  Rebuild                                    1 calls
-
-Target Performance Summary:
-        0 ms  ComputeCLInputPDBName                      1 calls
-        0 ms  CreateCustomManifestResourceNames          1 calls
-        0 ms  ComputeLinkInputsFromProject               1 calls
-        0 ms  ComputeCLGeneratedLinkInputs               1 calls
-        0 ms  ComputeManifestGeneratedLinkerInputs       1 calls
-        0 ms  ComputeRCGeneratedLinkInputs               1 calls
-        0 ms  ComputeRCOutputs                           1 calls
-        0 ms  BeforeLink                                 1 calls
-        0 ms  BuildLinkTraverse                          1 calls
-        0 ms  BuildCompile                               1 calls
-        0 ms  _BuildCompileAction                        1 calls
-        0 ms  PrepareResourceNames                       1 calls
-        0 ms  AfterBuildCompileEvent                     1 calls
-        0 ms  AfterResourceCompile                       1 calls
-        0 ms  BeforeResourceCompile                      1 calls
-        0 ms  _ClCompile                                 1 calls
-        0 ms  AfterClCompile                             1 calls
-        0 ms  MakeDirsForCl                              1 calls
-        0 ms  WarnCompileDuplicatedFilename              1 calls
-        0 ms  AfterRebuild                               1 calls
-        0 ms  BeforeClCompile                            1 calls
-        0 ms  BuildCompileTraverse                       1 calls
-        0 ms  BuildGenerateSources                       1 calls
-        0 ms  _ResourceCompile                           1 calls
-        0 ms  _BuildGenerateSourcesAction                1 calls
-        0 ms  PreLinkEvent                               1 calls
-        0 ms  AfterLink                                  1 calls
-        0 ms  Build                                      1 calls
-        0 ms  AfterBuild                                 1 calls
-        0 ms  BuildLink                                  1 calls
-        0 ms  _BuildLinkAction                           1 calls
-        0 ms  PostBuildEvent                             1 calls
-        0 ms  PrepareForRun                              1 calls
-        0 ms  CopyFilesToOutputDirectory                 1 calls
-        0 ms  _CopySourceItemsToOutputDirectory          1 calls
-        0 ms  GetCopyToOutputDirectoryItems              1 calls
-        0 ms  _Deploy                                    1 calls
-        0 ms  ComputeLinkImportLibraryOutputsForClean    1 calls
-        0 ms  _Appverifier                               1 calls
-        0 ms  _GenerateSatelliteAssemblyInputs           1 calls
-        0 ms  _BscMake                                   1 calls
-        0 ms  MakeDirsForBscMake                         1 calls
-        0 ms  ComputeCLCompileGeneratedSbrFiles          1 calls
-        0 ms  _XdcMake                                   1 calls
-        0 ms  ComputeCLCompileGeneratedXDCFiles          1 calls
-        0 ms  ResolvedXDCMake                            1 calls
-        0 ms  RegisterOutput                             1 calls
-        0 ms  _Manifest                                  1 calls
-        0 ms  _ALink                                     1 calls
-        0 ms  CreateSatelliteAssemblies                  1 calls
-        0 ms  AfterBuildGenerateSourcesEvent             1 calls
-        0 ms  Rebuild                                    1 calls
-        0 ms  _Midl                                      1 calls
-        0 ms  AfterClean                                 1 calls
-        0 ms  _CheckWindowsSDKInstalled                  1 calls
-        0 ms  GetResolvedWinMD                           1 calls
-        0 ms  AfterBuildGenerateSources                  1 calls
-        0 ms  GetFrameworkPaths                          1 calls
-        0 ms  PrepareProjectReferences                   1 calls
-        0 ms  BeforeResolveReferences                    1 calls
-        0 ms  _PrepareForReferenceResolution             1 calls
-        0 ms  _PrepareForBuild                           1 calls
-        0 ms  Clean                                      1 calls
-        0 ms  CppClean                                   1 calls
-        0 ms  PGInstrumentedClean                        1 calls
-        0 ms  AfterCppClean                              1 calls
-        0 ms  CleanReferencedProjects                    1 calls
-        0 ms  BeforeCppClean                             1 calls
-        0 ms  ResolveSDKReferences                       1 calls
-        0 ms  ExpandSDKReferences                        1 calls
-        0 ms  _SplitProjectReferencesByFileExistence     1 calls
-        0 ms  PreBuildEvent                              1 calls
-        0 ms  AfterMidl                                  1 calls
-        0 ms  ComputeMIDLGeneratedCompileInputs          1 calls
-        0 ms  _Xsd                                       1 calls
-        0 ms  CopyFileToFolders                          1 calls
-        0 ms  BeforeRebuild                              1 calls
-        0 ms  _PrepareForClean                           1 calls
-        0 ms  ComputeCustomBuildOutput                   1 calls
-        0 ms  SelectCustomBuild                          1 calls
-        0 ms  _SelectedFiles                             1 calls
-        0 ms  ResolveAssemblyReferences                  1 calls
-        0 ms  BeforeClean                                1 calls
-        0 ms  CleanPublishFolder                         1 calls
-        0 ms  BeforeBuildGenerateSources                 1 calls
-        0 ms  BuildGenerateSourcesTraverse               1 calls
-        0 ms  ResolveReferences                          1 calls
-        0 ms  AfterResolveReferences                     1 calls
-        1 ms  SetBuildDefaultEnvironmentVariables        1 calls
-        1 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
-        1 ms  _Link                                      1 calls
-        1 ms  AssignTargetPaths                          1 calls
-        1 ms  _CheckForCompileOutputs                    1 calls
-        1 ms  MakeDirsForLink                            1 calls
-        1 ms  MakeDirsForMidl                            1 calls
-        1 ms  AssignProjectConfiguration                 1 calls
-        1 ms  ComputeLegacyManifestEmbedding             1 calls
-        1 ms  MakeDirsForXdcMake                         1 calls
-        1 ms  SplitResourcesByCulture                    1 calls
-        1 ms  GetReferenceAssemblyPaths                  1 calls
-        2 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
-        2 ms  _PrepareForRebuild                         1 calls
-        3 ms  SetCABuildNativeEnvironmentVariables       1 calls
-        3 ms  ComputeReferenceCLInput                    1 calls
-        9 ms  FinalizeBuildStatus                        1 calls
-       10 ms  CustomBuild                                1 calls
-       15 ms  InitializeBuildStatus                      1 calls
-       18 ms  CoreClean                                  1 calls
-       21 ms  MakeDirsForResourceCompile                 1 calls
-       22 ms  CoreCppClean                               1 calls
-       26 ms  SetTelemetryEnvironmentVariables           1 calls
-       27 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
-       44 ms  _HandlePackageFileConflicts                1 calls
-       49 ms  PrepareForBuild                            1 calls
-       50 ms  ResolveProjectReferences                   1 calls
-
-Task Performance Summary:
-        0 ms  AssignTargetPath                           6 calls
-        0 ms  ReadLinesFromFile                          2 calls
-        0 ms  RemoveDuplicates                           1 calls
-        1 ms  MSBuild                                    1 calls
-        1 ms  FindUnderPath                              2 calls
-        1 ms  AssignProjectConfiguration                 1 calls
-        1 ms  AssignCulture                              1 calls
-        2 ms  CheckVCToolsetVersion                      1 calls
-        3 ms  Message                                    2 calls
-        5 ms  SetEnv                                     8 calls
-        8 ms  Delete                                     4 calls
-       10 ms  GetOutOfDateItems                          3 calls
-       12 ms  Touch                                      2 calls
-       13 ms  CppClean                                   1 calls
-       22 ms  WriteLinesToFile                           3 calls
-       40 ms  MakeDir                                   11 calls
-       41 ms  ResolvePackageFileConflicts                1 calls
+﻿  context.c
+  egl_context.c
+  init.c
+  input.c
+  monitor.c
+  osmesa_context.c
+  vulkan.c
+  wgl_context.c
+  win32_init.c
+  win32_joystick.c
+  win32_monitor.c
+  win32_thread.c
+  win32_time.c
+  win32_window.c
+  window.c
+  Generating Code...
+  GLFW.vcxproj -> C:\Users\adising\source\repos\Maple\x64\Debug\GLFW.dll
