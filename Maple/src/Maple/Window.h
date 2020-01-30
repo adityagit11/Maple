@@ -24,6 +24,7 @@ namespace Maple {
 	class MAPLE_API Window
 	{
 	public:
+		// The signature of the funnction is - return type is void and the parameter is Event - ref
 		using EventCallbackFn = std::function<void(Event&)>;
 
 		virtual ~Window() {}
