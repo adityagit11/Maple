@@ -1,6 +1,5 @@
 #pragma once
 
-
 #ifdef MP_PLATFORM_WINDOWS
 
 // A function which we will define somewhere else, which returns that

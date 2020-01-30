@@ -21,6 +21,8 @@
     <ClInclude Include="src\Maple\Core.h" />
     <ClInclude Include="src\Maple\EntryPoint.h" />
     <ClInclude Include="src\Maple.h" />
+    <ClInclude Include="src\Maple\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Maple\mppch.cpp">
@@ -29,6 +31,15 @@
     </ClCompile>
     <ClCompile Include="src\Maple\Log.cpp" />
     <ClCompile Include="src\Maple\Application.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Maple/mppch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Maple/mppch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GLFW\GLFW.vcxproj">
+      <Project>{46ec8d7b-7abf-4d94-83bb-03799bdf23b5}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

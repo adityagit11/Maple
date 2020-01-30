@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Maple/mppch.h"
 #include "../Core.h"
 
 namespace Maple {
